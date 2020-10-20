@@ -33,4 +33,10 @@ h1 {
   font-weight: 500;
   color: #414c5e;
 }
+
+@media (min-width: 960px) {
+  .main-header .container {
+    justify-content: space-between;
+  }
+}
 </style>

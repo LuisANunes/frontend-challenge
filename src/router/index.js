@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
-import TranscriptionsList from "../views/transcriptions/TranscriptionsList.vue";
+import AppLayout from "../views/layout/AppLayout.vue";
 
 const routes = [
-  { path: "/", name: "Home", component: TranscriptionsList },
+  { path: "/", name: "Home", component: AppLayout },
   { path: "/:notFound(.*)", name: "NotFound", component: null }
 ];
 
