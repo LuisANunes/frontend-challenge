@@ -2,13 +2,27 @@
   <header>
     <div class="container">
       <h1>Transcriptions</h1>
-      <div class="header-actions">
-        <button>Upload data</button>
-        <button>Get Data</button>
+      <div class="header--actions">
+        <app-button :onClick="uploadAction">
+          <img src="@/assets/upload.svg" alt="Upload icon" />
+        </app-button>
+        <app-button :onClick="fetchAction">
+          <img src="@/assets/fetch-document.svg" alt="Fetch icon" />
+        </app-button>
       </div>
     </div>
   </header>
 </template>
+
+<script>
+import AppButton from "../AppButton.vue";
+
+export default {
+  components: {
+    AppButton
+  }
+};
+</script>
 
 <style scoped>
 header {

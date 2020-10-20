@@ -25,11 +25,11 @@ export default createStore({
   mutations: {},
   actions: {},
   getters: {
-    transcriptions(state) {
-      return state.transcriptions;
+    transcriptions({ transcriptions }) {
+      return transcriptions;
     },
-    hasTranscriptions(state) {
-      return state.transcriptions && state.transcriptions.length > 0;
+    hasTranscriptions({ transcriptions }) {
+      return transcriptions && transcriptions.length > 0;
     }
   },
   modules: {}
